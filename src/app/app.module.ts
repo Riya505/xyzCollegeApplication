@@ -7,20 +7,22 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AddstudentComponent } from './addstudent/addstudent.component';
 
 const appRoutes:Routes=[
   {
     path:"",component:AdminLoginComponent
   },
   {
-    path:"dashboard",component:NavbarComponent
+    path:"dashboard",component:AddstudentComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     AdminLoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddstudentComponent
   ],
   imports: [
     BrowserModule,
