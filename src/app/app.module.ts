@@ -6,16 +6,21 @@ import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes:Routes=[
   {
     path:"",component:AdminLoginComponent
+  },
+  {
+    path:"dashboard",component:NavbarComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
