@@ -20,4 +20,16 @@ export class ApiService {
   searchStudent=(data:any)=>{
     return this.http.post("http://localhost:8080/searchStudent",data)
   }
+  viewFaculty=()=>{
+    return this.http.get("http://localhost:8080/viewFaculty")
+  }
+  addFaculty=(data:any)=>{
+    return this.http.post("http://localhost:8080/facultyEntry",data)
+  }
+  deleteFaculty=(data:any)=>{
+    return this.http.post("http://localhost:8080/deleteFaculty",data)
+  }
+  searchFaculty=(data:any)=>{
+    return this.http.post("http://localhost:8080/searchFaculty",data)
+  }
 }
