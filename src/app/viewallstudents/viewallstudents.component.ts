@@ -18,6 +18,16 @@ export class ViewallstudentsComponent implements OnInit {
       }
     )
   }
+  deleteStudent=(id:any)=>{
+    let data={"id":id
+  }
+  this.myapi.deleteStudent(data).subscribe(
+    (respo)=>{
+      alert("Deleted")
+    }
+  )
+  this.fetchData()
+  }
 
   studentData:any=[]
 
