@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Enter Name</label>
+                    <input type="text" class="form-control" name="studentName" [(ngModel)]="studentName">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">AdmisionNo:</label>
+                    <input type="text" class="form-control" name="admissionNo" [(ngModel)]="admissionNo">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success" (click)="readValue()">Search</button>
+                </div>
+                <div *ngFor="let i of data">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">studentName</label>
+                        <input type="text" class="form-control" value="{{i.studentName}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">rollNo</label>
+                        <input type="text" class="form-control" value="{{i.rollNo}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">admissionNo</label>
+                        <input type="text" class="form-control" value="{{i.admissionNo}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">collegeName</label>
+                        <input type="text" class="form-control" value="{{i.collegeName}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">department</label>
+                        <input type="text" class="form-control" value="{{i.department}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">bloodGroup</label>
+                        <input type="text" class="form-control" value="{{i.bloodGroup}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">dateOfBirth</label>
+                        <input type="text" class="form-control" value="{{i.dateOfBirth}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">parentName</label>
+                        <input type="text" class="form-control" value="{{i.parentName}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">parentEmail</label>
+                        <input type="text" class="form-control" value="{{i.parentEmail}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">guardianName</label>
+                        <input type="text" class="form-control" value="{{i.guardianName}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">guardianAddress</label>
+                        <input type="text" class="form-control" value="{{i.guardianAddress}}">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
