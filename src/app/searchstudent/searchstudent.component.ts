@@ -10,23 +10,34 @@ export class SearchstudentComponent implements OnInit {
 
   constructor(private myapi:ApiService) { }
 
-  studentName=""
-  admissionNo=""
+  input:any=""
+  data={
+
+  }
 
   readValue=()=>{
-    let data={
-      "studentName":this.studentName,
-      "admissionNo":this.admissionNo
+    if (isNaN(this.input)) {
+      this.data={
+        "studentName":this.input,
+      "admissionNo":0
+      }
+      
+    } else {
+      this.data={
+        "studentName":this.input,
+      "admissionNo":this.input
+      }
     }
-    console.log(data)
-    this.myapi.searchStudent(data).subscribe(
-      (response)=>{
-        this.data=response
+    console.log(this.data)
+    this.myapi.searchStudent(this.data).subscribe(
+      (resp)=>{
+        this.datas=resp
+        console.log(resp)
       }
     )
   }
   
-  data:any=[
+  datas:any=[
    
 ]
 

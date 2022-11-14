@@ -4,17 +4,13 @@
 
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form-label">Enter Name</label>
-                    <input type="text" class="form-control" name="studentName" [(ngModel)]="studentName">
-                </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form-label">AdmisionNo:</label>
-                    <input type="text" class="form-control" name="admissionNo" [(ngModel)]="admissionNo">
+                    <label for="" class="form-label">Enter Name or admissionNo</label>
+                    <input type="text" class="form-control" name="input" [(ngModel)]="input">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <button class="btn btn-success" (click)="readValue()">Search</button>
                 </div>
-                <div *ngFor="let i of data">
+                <div *ngFor="let i of datas">
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">studentName</label>
                         <input type="text" class="form-control" value="{{i.studentName}}">
